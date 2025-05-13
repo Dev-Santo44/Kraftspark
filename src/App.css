@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    background-image: url('./assets/images/bn1.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: rgba(231, 231, 231, 1);
+}
+
+@font-face{
+    font-family: Nico Moji;
+    src: './assets/fonts/NicoMoji-Regular.ttf';
+}

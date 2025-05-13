@@ -1,0 +1,212 @@
+/* General Page Styling */
+.Cart-page {
+    background: linear-gradient(135deg, #dcd6f7, #a6e1fa);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Validator Box */
+  .validator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Steps Section */
+  .steps {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .game-pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #a084dc;
+    object-fit: cover;
+  }
+  
+  .steps h3 {
+    color: #7a5ea8;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .steps ol {
+    padding-left: 20px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Game Credential Section */
+  .game-credentioal {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+  }
+  
+  .game-credentioal h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .game-credentioal input[type='number'],
+  .game-credentioal input[type='text'] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .game-credentioal input[type='submit'] {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .game-credentioal input[type='submit']:hover {
+    background-color: #5a189a;
+  }
+  
+  /* Cart Items Section */
+  .Cart-Items {
+    margin-top: 60px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Cart-Items h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #7a5ea8;
+  }
+  
+  .Cart-Items ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Cart-Items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f0f6;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .Cart-Items li h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .Cart-Items li p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .Cart-Items li span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7b2cbf;
+  }
+  
+  /* Expense Table Section */
+  .expense-table {
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .expense-table h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .expense-table th,
+  .expense-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .expense-table th {
+    background-color: #f1f1f1;
+    text-align: left;
+  }
+  
+  .expense-table tr:last-child td {
+    border-bottom: none;
+  }
+  .checkout-button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .checkout-button-wrapper button {
+    background-color: #10b981; /* green-600 */
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .checkout-button-wrapper button:hover {
+    background-color: #059669; /* green-700 */
+    box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+    transform: scale(1.03);
+  }
+  .remove-button {
+    margin-left: 20px;
+    background-color: #e54649;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  .remove-button:hover {
+    background-color: #d50000;
+  }
+  
+  
