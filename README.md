@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# 💎 Game Top-Up Store (React + Node.js + MongoDB)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack web application that allows users to purchase top-up game credits (like Diamond Packs) and store their order data. Admins can log in to view user orders and manage products. The application is built with:
 
-## Available Scripts
+- **Frontend**: React (Vite)
+- **Backend**: Node.js + Express
+- **Database**: MongoDB (Mongoose)
+- **Authentication**: Firebase Authentication (Phone + Gmail login)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔧 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User authentication with Firebase
+- Add/remove items to/from the cart
+- Order placement (saved in MongoDB)
+- Admin-only dashboard to view orders and add new products
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the repository
 
-### `npm run build`
+```bash
+git clone https://github.com/yourusername/game-topup-store.git
+cd game-topup-store
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📁 Project Structure
+bashCopyEditroot/
+├── client/        # React frontend
+├── server/        # Express backend
+└── README.md
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+🔑 Environment Variables
+Create a .env file inside both the client and server folders.
+📦 .env for /client
+envCopyEditVITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📝 These values come from your Firebase project settings.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🔐 .env for /server
+envCopyEditPORT=5000
+MONGO_URI=your_mongodb_connection_string
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ Make sure to replace your_mongodb_connection_string with your MongoDB URI from MongoDB Atlas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+▶️ Run the Project
+Open two terminals: one for the frontend and one for the backend.
+1️⃣ Start the Backend
+bashCopyEditcd server
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2️⃣ Start the Frontend
+bashCopyEditcd client
+npm install
+npm run dev
 
-### Analyzing the Bundle Size
+The frontend will start on: http://localhost:5173
+The backend runs on: http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
