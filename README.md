@@ -24,7 +24,7 @@ This project is a full-stack web application that allows users to purchase top-u
 
 ```bash
 git clone https://github.com/yourusername/game-topup-store.git
-cd game-topup-store
+cd Kraftspark
 ```
 
 
