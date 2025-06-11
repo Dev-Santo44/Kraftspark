@@ -10,7 +10,6 @@ function Footer() {
                 <div>terms and conditons</div>
                 <div>socials</div>
                 </div>
-                <p>@Dev-Santo44</p>
             </footer>
         </div>
     )
